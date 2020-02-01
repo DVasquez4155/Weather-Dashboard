@@ -9,7 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
     <link rel='stylesheet' href="assets/css/css.css">
     <title>Weather Dashoard</title>
 </head>
@@ -18,25 +17,59 @@
         <span>Weather Dashboard</span>
     </header>
     <div class="container">
-        <a href="#about">About</a>
+        <div class='cont'>
+            <div class='title'>
+                <span id='city'></span>
+                <span id='date'></span>
+                <span id='weatherEmoji'></span>
+            </div>
+            <br>
+            <span>Temperature: </span>
+            <span id='temp'></span>
+            <br>
+            <br>
+            <span>Humidity: </span>
+            <span id='humidity'></span>
+            <br>
+            <br>
+            <span>Wind Speed: </span>
+            <span id='windSpeed'></span>
+            <br>
+            <br>
+            <span>UV Index: </span>
+            <span class='alert' id='uvIndex'></span>
+        </div>
+        
+        <div>
+            <span class='title'>5-Day Forecast:</span>
+        </div>
+
     </div>
         
     <nav class="main">
-        <h2>Sidebar</h2>
+        <h4>Search For A City:</h4>
+        <div class='form-group'>
+            <input class="form-control" id="cityForm" placeholder="City">
+            <button id='search' class='btn btn-primary'><i class="fa fa-search"></i></button>
+        </div>
+        <div id='cities' class='container'>
+        </div>
     </nav>
     
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="https://kit.fontawesome.com/385ee6e559.js" crossorigin="anonymous"></script>
+    <script src='https://momentjs.com/downloads/moment.min.js'></script>
+    <script src='assets/js/Local-Storage.js'></script>
     <script src='assets/js/script.js'></script>
+    <script src='assets/js/weather.js'></script>
 </body>
 
 </html>
