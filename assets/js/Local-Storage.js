@@ -1,13 +1,13 @@
 var values = getValues();
 function getValues() {
-    var retrievedObject = localStorage.getItem('values');
+    var retrievedObject = localStorage.getItem('WeatherDashboard');
     if (retrievedObject == null || retrievedObject == undefined) {
         return [];
     }
     return JSON.parse(retrievedObject);
 }
 function updateValues() {
-    localStorage.setItem('values', JSON.stringify(values));
+    localStorage.setItem('WeatherDashboard', JSON.stringify(values));
 }
 function addValue(value) {
     if (values.indexOf(value) != -1) {
