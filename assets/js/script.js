@@ -16,8 +16,11 @@ $('#search').on('click', function() {
     var currentCity = $('#cityForm').val();
     getWeather(currentCity);
     addValue(currentCity)
-    if (values.indexOf(value) != -1) {
+    console.log(currentCity)
+    if (values.indexOf(currentCity) == -1) {
         return;
     }
+    
+    console.log(currentCity)
     newCity(currentCity)
 })

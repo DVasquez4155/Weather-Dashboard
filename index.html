@@ -16,7 +16,7 @@
     <header class='pb-2'>
         <span>Weather Dashboard</span>
     </header>
-    <div class="container">
+    <div class="main">
         <div class='cont'>
             <div class='title'>
                 <span id='city'></span>
@@ -40,19 +40,20 @@
             <span class='alert' id='uvIndex'></span>
         </div>
         
-        <div>
+        <div class='container'>
             <span class='title'>5-Day Forecast:</span>
+            <div class='row' id='days'></div>
         </div>
 
     </div>
         
-    <nav class="main">
+    <nav >
         <h4>Search For A City:</h4>
         <div class='form-group'>
             <input class="form-control" id="cityForm" placeholder="City">
             <button id='search' class='btn btn-primary'><i class="fa fa-search"></i></button>
         </div>
-        <div id='cities' class='container'>
+        <div id='cities'>
         </div>
     </nav>
     
@@ -68,8 +69,8 @@
     <script src="https://kit.fontawesome.com/385ee6e559.js" crossorigin="anonymous"></script>
     <script src='https://momentjs.com/downloads/moment.min.js'></script>
     <script src='assets/js/Local-Storage.js'></script>
-    <script src='assets/js/script.js'></script>
     <script src='assets/js/weather.js'></script>
+    <script src='assets/js/script.js'></script>
 </body>
 
 </html>

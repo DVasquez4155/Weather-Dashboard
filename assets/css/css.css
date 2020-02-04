@@ -26,20 +26,13 @@ color: #818181;
 display: block;
 }
 
-.container {
+.main {
     margin-left: 22rem;
     margin-top: 1rem;
-    margin-right: 1rem;
+    margin-right: 12rem;
     max-width: 100%;
+    width: fit-content;
 }
-.cont {
-    border-color: #ddd;
-    border-width: 1px;
-    border-style: solid;
-    padding: 1rem;
-    padding-bottom: 2rem;
-}
-
 .title {
     font-size: xx-large;
     font-weight: 600;
@@ -59,4 +52,15 @@ display: block;
 }
 #uvIndex {
     opacity: 85%;
+}
+#search, #cityForm{
+    display: inline;
+    width: auto;
+}
+#days > div {
+    background-color: #55f;
+    padding: 1rem;
+    margin: 1rem;
+    color: #fff;
+    border-radius: 1rem;
 }
